@@ -1,0 +1,41 @@
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+  	<body>
+  	<script type="text/javascript" src="Robot.js"></script>
+  	
+  	<div id="takingInput">
+  		<label>X Value : </label>
+  		<input type = "text" id = "xPosition" value = "0" />
+  		
+  		<label>Y Value : </label>
+  		<input type = "text" id = "yPosition" value = "0" />
+  		
+  		<label>Facing : </label>
+        <select id = "facing">
+            <option value="north">North</option>
+            <option value="south">South</option>
+            <option value="west">West</option>
+            <option value="east">East</option>
+        </select>
+  	</div>
+  	
+  	 <div id="view">
+       	<div id="tableContainer">
+        	<canvas id="tableCanvas" ></canvas>
+        	<!-- <div id="tab"></div> -->
+       	</div>
+     </div>
+     
+     <div id="buttons">
+            <input type="button" value="Move" onclick="move()">
+
+            <input type="button" value="Left" onclick="takeLeft()">
+
+            <input type="button" value="Right" onClick="takeRight()">
+
+            <input type="button" value="Report" onClick="report()">
+        </div>
+     </body>
+</head>
+</html>
